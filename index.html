@@ -100,7 +100,10 @@ footer{color:var(--muted);font-size:13px}
           <li>앱 왼쪽 위의 <kbd>&lt;/&gt;</kbd> 버튼을 눌러 Code 탭으로 갑니다.</li>
           <li>왼쪽 메뉴 맨 위 <b>새로 만들기</b>를 누릅니다.</li>
           <li>가운데 상자에서 작업 폴더를 고릅니다. 결과물은 피그마에 저장되니 폴더는 아무거나 괜찮아요.</li>
+          <li><b>환경 선택</b>을 눌러 <b>로컬 → 이 컴퓨터</b>로 고릅니다.</li>
         </ol>
+        <p class="note"><b>꼭 "이 컴퓨터"로 설정하세요.</b> 클라우드(Default 등)로 열면 내장 브라우저를 쓸 수 없어요.</p>
+        <img src="step1-env.jpg" alt="환경 선택 메뉴. 로컬 아래 '이 컴퓨터'에 체크 표시가 되어 있다." width="600" height="620" loading="lazy" style="max-width:260px;display:block;margin:12px 0 0;border-radius:12px;border:1px solid var(--line, #ddd)">
       </div>
       <figure>
         <img src="step1-new-session.jpg" alt="클로드 앱 Code 탭의 새 세션 화면. 가운데에 폴더 선택 상자가 있다." width="2000" height="1220" loading="lazy">
@@ -147,13 +150,14 @@ footer{color:var(--muted);font-size:13px}
         <div class="prompts">
           <div class="prompt">
             <div class="row"><span class="tag">빈칸 채우기용</span><button class="copy" type="button" id="c1">복사</button></div>
-            <q>내장 브라우저에 피그마 열어뒀어. <span class="blank">[섹션 이름]</span> 섹션에 <span class="blank">[주제/제품]</span> <span class="blank">[목적: 굿즈 자랑, 신제품 소개 등]</span> 바이럴 소재를 <span class="blank">[사이즈]</span>로 <span class="blank">[개수]</span>개, 한국어로 만들어줘</q>
+            <q>내장 브라우저에 피그마 열어뒀어. <span class="blank">[섹션 이름]</span> 섹션에 <span class="blank">[주제/제품]</span> <span class="blank">[목적: 굿즈 자랑, 신제품 소개 등]</span> 바이럴 소재를 <span class="blank">[사이즈]</span>로 <span class="blank">[개수]</span>개, 한국어로 만들어줘. 피그마 MCP 말고 내장 브라우저로 작업해줘</q>
           </div>
           <div class="prompt">
             <div class="row"><span class="tag">이번에 실제로 쓴 요청</span><button class="copy" type="button" id="c2">복사</button></div>
-            <q>내장 브라우저에 피그마 열어뒀어. 치이카와 굿즈 자랑하는 바이럴 소재로 한국어로 만들어줘</q>
+            <q>내장 브라우저에 피그마 열어뒀어. 치이카와 굿즈 자랑하는 바이럴 소재로 한국어로 만들어줘. 피그마 MCP 말고 내장 브라우저로 작업해줘</q>
           </div>
         </div>
+        <p class="note"><b>"내장 브라우저로 작업해줘"를 꼭 붙이세요.</b> 그냥 요청하면 클로드가 내장 브라우저 대신 피그마 MCP(연결 프로그램)로 접속하려고 해요. 이미 MCP 연결 창이 떴다면 취소하고 "피그마 MCP 말고 내장 브라우저로 진행해줘"라고 다시 말하면 됩니다.</p>
         <p><b>보내고 나면 클로드는 이렇게 움직입니다.</b></p>
         <ol class="sub">
           <li>피그마 파일을 읽고 섹션과 템플릿을 찾습니다.</li>
