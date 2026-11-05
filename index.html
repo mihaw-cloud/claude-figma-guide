@@ -77,7 +77,7 @@ footer{color:var(--muted);font-size:13px}
     <h1>클로드한테 피그마 바이럴 소재 제작하기</h1>
     <p class="lede">클로드 앱 안의 브라우저로 피그마를 열어두면, 말로 요청한 디자인을 클로드가 피그마 파일 안에 직접 만들어 줍니다. 아래는 치이카와 굿즈 자랑 바이럴 소재 1장을 만들고 10가지 형태로 늘린 실제 과정을 처음 하는 사람 기준으로 정리한 것입니다.</p>
     <nav class="flow" aria-label="바로가기">
-      <a href="#prep">준비물</a><a href="#s1">1 새 세션</a><a href="#s2">2 내장 브라우저</a><a href="#s3">3 피그마 파일</a><a href="#s4">4 요청</a><a href="#s5">5 사진</a><a href="#s6">6 버전 늘리기</a><a href="#s7b">7 에셋 번호</a><a href="#more">대량 수정·에셋</a>
+      <a href="#prep">준비물</a><a href="#s0">1 환경 설정</a><a href="#s1">2 새 세션</a><a href="#s2">3 내장 브라우저</a><a href="#s3">4 피그마 파일</a><a href="#s4">5 요청</a><a href="#s5">6 사진</a><a href="#s6">7 버전 늘리기</a><a href="#s7b">8 에셋 번호</a><a href="#more">대량 수정·에셋</a>
     </nav>
   </header>
 
@@ -92,18 +92,31 @@ footer{color:var(--muted);font-size:13px}
   </section>
 
   <section class="steps" aria-label="진행 순서">
-    <article class="step" id="s1">
+    <article class="step" id="s0">
       <div class="txt">
         <div class="num">STEP 1</div>
+        <h2>환경을 "이 컴퓨터"로 설정하기</h2>
+        <ol class="sub">
+          <li>새 세션 화면에서 <b>환경 선택</b>을 누릅니다.</li>
+          <li><b>로컬 → 이 컴퓨터</b>를 고릅니다. 체크 표시가 붙으면 됩니다.</li>
+        </ol>
+        <p class="note"><b>꼭 "이 컴퓨터"로 설정하세요.</b> 클라우드(Default 등)로 열면 내장 브라우저를 쓸 수 없어요.</p>
+      </div>
+      <figure>
+        <img src="step1-env.jpg" alt="환경 선택 메뉴. 로컬 아래 '이 컴퓨터'에 체크 표시가 되어 있다." width="600" height="620" loading="lazy" style="max-width:320px;margin:0 auto">
+        <figcaption style="text-align:center">환경 선택 → 로컬 → 이 컴퓨터</figcaption>
+      </figure>
+    </article>
+
+    <article class="step" id="s1">
+      <div class="txt">
+        <div class="num">STEP 2</div>
         <h2>새 세션 열기</h2>
         <ol class="sub">
           <li>앱 왼쪽 위의 <kbd>&lt;/&gt;</kbd> 버튼을 눌러 Code 탭으로 갑니다.</li>
           <li>왼쪽 메뉴 맨 위 <b>새로 만들기</b>를 누릅니다.</li>
           <li>가운데 상자에서 작업 폴더를 고릅니다. 결과물은 피그마에 저장되니 폴더는 아무거나 괜찮아요.</li>
-          <li><b>환경 선택</b>을 눌러 <b>로컬 → 이 컴퓨터</b>로 고릅니다.</li>
         </ol>
-        <p class="note"><b>꼭 "이 컴퓨터"로 설정하세요.</b> 클라우드(Default 등)로 열면 내장 브라우저를 쓸 수 없어요.</p>
-        <img src="step1-env.jpg" alt="환경 선택 메뉴. 로컬 아래 '이 컴퓨터'에 체크 표시가 되어 있다." width="600" height="620" loading="lazy" style="max-width:260px;display:block;margin:12px 0 0;border-radius:12px;border:1px solid var(--line, #ddd)">
       </div>
       <figure>
         <img src="step1-new-session.jpg" alt="클로드 앱 Code 탭의 새 세션 화면. 가운데에 폴더 선택 상자가 있다." width="2000" height="1220" loading="lazy">
@@ -113,7 +126,7 @@ footer{color:var(--muted);font-size:13px}
 
     <article class="step" id="s2">
       <div class="txt">
-        <div class="num">STEP 2</div>
+        <div class="num">STEP 3</div>
         <h2>내장 브라우저 열고 피그마 로그인</h2>
         <ol class="sub">
           <li>오른쪽 위 <b>지구본 아이콘</b>(그림의 빨간 동그라미)을 누르면 채팅 오른쪽에 브라우저가 열립니다. 평소 쓰는 크롬과는 따로 도는 브라우저예요.</li>
@@ -130,7 +143,7 @@ footer{color:var(--muted);font-size:13px}
 
     <article class="step solo" id="s3">
       <div class="txt">
-        <div class="num">STEP 3</div>
+        <div class="num">STEP 4</div>
         <h2>피그마 파일 준비하기</h2>
         <ol class="sub">
           <li>내장 브라우저에서 작업할 피그마 디자인 파일을 엽니다. 새로 만들려면 피그마 홈에서 <b>+ 새로 만들기 → 디자인</b>을 고르세요.</li>
@@ -144,7 +157,7 @@ footer{color:var(--muted);font-size:13px}
 
     <article class="step solo" id="s4">
       <div class="txt">
-        <div class="num">STEP 4</div>
+        <div class="num">STEP 5</div>
         <h2>채팅으로 요청하기</h2>
         <p>아래 문장의 파란 칸만 바꿔서 채팅창에 보내면 됩니다. 무엇을, 어떤 목적으로, 몇 장, 어떤 사이즈, 어떤 언어로 만들지 넣을수록 결과가 원하는 쪽에 가까워져요.</p>
         <div class="prompts">
@@ -171,7 +184,7 @@ footer{color:var(--muted);font-size:13px}
 
     <article class="step solo" id="s5">
       <div class="txt">
-        <div class="num">STEP 5</div>
+        <div class="num">STEP 6</div>
         <h2>사진 넣고 알려주기</h2>
         <ol class="sub">
           <li>사진 파일을 내장 브라우저의 피그마 섹션 안으로 끌어다 놓습니다. 여러 장을 한 번에 놓아도 돼요.</li>
@@ -189,7 +202,7 @@ footer{color:var(--muted);font-size:13px}
 
     <article class="step" id="s6">
       <div class="txt">
-        <div class="num">STEP 6</div>
+        <div class="num">STEP 7</div>
         <h2>여러 형태로 늘리기</h2>
         <p>1장이 마음에 들면 한 줄로 변형을 늘릴 수 있습니다. 이번에는 풀블리드, 폴라로이드, 그리드, 체크리스트, Q&amp;A, TOP 3, 데일리룩, 매거진, 채팅, 투표 10가지가 나왔어요.</p>
         <div class="prompt">
@@ -206,7 +219,7 @@ footer{color:var(--muted);font-size:13px}
 
     <article class="step" id="s7b">
       <div class="txt">
-        <div class="num">STEP 7</div>
+        <div class="num">STEP 8</div>
         <h2>이런 것도 가능해요!</h2>
         <p>색조 브랜드처럼 에셋이 너무 많아 일일이 찾기 어려울 때, 번호만 말하면 그 에셋으로 만들어 줘요.</p>
         <div class="prompt"><div class="row"><q>23번 에셋으로 만들어줘</q><button class="copy" type="button" id="c7b">복사</button></div></div>
